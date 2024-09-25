@@ -4,13 +4,13 @@ public class Main {
        Scanner Info = new Scanner(System.in);
        System.out.print("Enter the total: "); //gets the total from user
        String Total = Info.nextLine();
-       double total = Double.parseDouble(Total);
+       double total = Double.parseDouble(Total); //saves the total as a double so it can be used for calculations
        System.out.print("Enter the percent you want to tip: "); //asks user for tip percent
        String Percent = Info.nextLine();
-       double percent = Double.parseDouble(Percent);
+       double percent = Double.parseDouble(Percent); //saves the tip percent as a double
        System.out.print("Enter the amount of people in your party: "); //gets the number of people form user input
        String People = Info.nextLine();
-       double people = Double.parseDouble(People);
+       double people = Double.parseDouble(People); //saves the number of people as a double
        double tip = total * (percent/100); //converts tip percent into a decimal and multiplies it by total to get the tip
        total += tip; //adjusts the total to include tip
        double tip_each = tip/people; //divides tip by number of people to get tip per person
